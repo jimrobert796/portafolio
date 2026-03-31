@@ -1,0 +1,877 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+
+}
+html {
+  scroll-behavior:smooth;
+}
+
+body{
+background:#0C0F13;
+color:white;
+overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:end;
+padding:29px 10%;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+z-index: 5;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+}
+
+
+/* Estilos para los iconos */
+.nav-icons img {
+    width: 22px;      /* Tamaño consistente para iconos */
+    height: 22px;
+    transition: opacity 0.3s;
+    position: relative;
+    top: 5px;
+}
+
+/* HERO */
+.hero{
+height:100%;
+display:flex;
+justify-content:center;
+flex-direction: column;
+align-items:center;
+text-align:center;
+background-size:cover;
+position:relative;
+padding-top: 250px;
+
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+margin-top:10px;
+opacity:0.8;
+}
+
+/* CLOUDS */
+
+.clouds-top{
+    width: 100%;
+    height: auto;
+    display: block;  /* Elimina espacio debajo de la imagen */
+
+}
+
+/* ABOUT */
+
+.about{
+padding: 125px 10%;
+}
+
+.about H2{
+    font-size: 43px;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 23px;
+}
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-image{
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-image img{
+    width: 250px;
+    height: 450px;
+    border-radius: 16px;
+}
+
+.btn-cv-download{
+    margin-top: 60px;
+    width: 250px;
+    background-color: #4c49fc9e;
+    color: antiquewhite;
+    padding:10px;
+    text-align:center;
+    border-radius:8px;
+    cursor:pointer;
+    border-style: none;
+}
+
+/* SKILLS */
+
+.skills{
+    padding:100px 10%;
+    text-align:center;
+}
+.skills H2{
+    margin-bottom: 50px;
+}
+
+
+.skills-container{
+    
+    display: flex;
+    flex-direction: column;  
+}
+
+.skill-card{
+
+background:#272E3640;
+    border-color: #B6BBC140;
+    border-style: solid;
+    border-width: 3px;
+    opacity: 90%;
+    padding:70px;
+    margin-bottom: 15px;
+    border-radius:10px;
+}
+
+/* .skill-card h3{
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 40px;
+} */
+
+
+.card-header{
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 10px;
+    bottom: 40px;
+}
+
+#image-header {
+    width: 26px;
+    height: 33px;
+    position: relative;
+    bottom: 5px;
+    right: 10px;
+}
+
+
+
+
+.skill-card img{
+    width: 18px;
+    height: 18px;
+}
+
+.badges{
+    display: flex;
+    align-items: end;
+}
+
+.badges span{
+    padding:6px 10px;
+    margin:10px;
+    background:#0E0F10;
+    border-color: #4A4E51;
+    border-radius:16px;
+    font-size:20px;
+}
+
+
+.projects h2{
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+
+
+/* PROJECTS */
+.projects{
+    padding-top:100px;
+}
+
+.project-card{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    border-radius:15px;
+    margin-bottom: 300px;
+}
+
+.project-image{
+    position:relative;
+    width:724px;
+
+}
+
+#img-proyect{
+    width:724px;
+    height: 385px;
+    border-radius:10px;
+    position:relative;
+    z-index:2;
+}
+
+#back-img{
+    position:absolute;
+    top: -60px;
+    left: -90px;
+    width:877px;
+    z-index:1;
+    opacity:0.5;   /* opcional para efecto */
+}
+
+.project-info{
+    padding: 60px;
+}
+
+.project-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.project-header h3{
+    font-size:37px;
+}
+
+.status{
+    font-size:19px;
+    opacity:0.6;
+}
+
+.project-desc{
+    opacity:0.7;
+    margin-bottom:30px;
+}
+
+.project-tags span{
+    display:inline-block;
+    padding:5px 10px;
+    margin:3px;
+    background:#1a2335;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom: 15px;
+}
+
+.project-buttons{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.btn-primary{
+    background-color: #4D49FC;
+    padding:10px;
+    text-align:center;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+/* CONTACT */
+
+.contact{
+padding:100px 10%;
+position:relative;
+}
+
+.contact h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-form h2{
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-form{
+    background-color: #2B2D2F40;
+    border-color: #B6BBC140;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.contact-form input{
+width:100%;
+padding:10px;
+margin-bottom:30px;
+background:#4A4E5140;
+border:none;
+color:white;
+border-radius:6px;
+}
+
+.contact-form textarea{
+    
+    margin-bottom:30px;
+    background:#4A4E5140;
+    
+    border:none;
+    color:white;
+
+    border-radius:6px;
+    width: 100%;
+    height:137px;
+}
+
+.contact-form button{
+    width:464px;
+    padding:10px;   
+    background-color: #4D49FC;
+    border:none;
+    border-radius:6px;
+    color:white;
+}
+.contact-form h4{
+    text-align: start;
+    margin-bottom: 12px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-info h2{
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+
+.contact-media{
+    background-color: #2B2D2F40;
+    border-color: #B6BBC140;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    padding: 25px;
+    padding-bottom: 10px;
+
+}
+.contact-media h3{
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+.contact-media p{
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+footer {
+    background-color: #38494A;
+    position: relative;  /* Importante: el footer es el contenedor de referencia */
+    width: 100%;
+    min-height: 200px;  /* Ajusta según tu SVG */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* Opcional: evita desbordamientos */
+}
+
+.clouds-bottom {
+    width: 100%;
+    height: auto;
+    display: block;  /* Elimina espacio debajo de la imagen */
+}
+
+footer p {
+    position: absolute;
+    bottom: 30px;     /* Distancia desde abajo - ¡AJUSTA ESTO! */
+    right: 30px;      /* Distancia desde la derecha - ¡AJUSTA ESTO! */
+    color: white;     /* Color del texto */
+    margin: 0;
+    padding: 0;
+    z-index: 2;       /* Asegura que esté sobre la imagen */
+    
+
+}
+
+
+/* BACKGROUNDS PARA HERO, SKILLS Y  */
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #070707;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.50%,0.3)' /%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  background-attachment: fixed;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.45%)' /%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  background-attachment: fixed;
+  animation: driftSW 16s linear infinite;
+}
+
+@keyframes driftSW {
+  0%   { background-position: 0 0; }
+  100% { background-position: -150px 150px; }
+}
+
+.hero-content,
+.clouds-top {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+.skills {
+  position: relative;
+  overflow: hidden;
+  background-color: #070707;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.50%,0.3)' /%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 150px 150px;
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.45%)' /%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  animation: driftSW 16s linear infinite;
+}
+
+@keyframes driftSW {
+  0%   { background-position: 0 0; }
+  100% { background-position: -150px 150px; }
+}
+
+.skills-content,
+.skill-card, h2{
+  position: relative;
+  z-index: 4;
+}
+
+
+.projects {
+  position: relative;
+  overflow: hidden;
+  background-color: #070707;
+}
+
+.projects::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.50%,0.3)' /%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 150px 150px;
+}
+
+.projects::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.45%)' /%3E%3C/svg%3E");
+
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 150px 150px;
+  animation: driftSW 16s linear infinite;
+}
+
+@keyframes driftSW {
+  0%   { background-position: 0 0; }
+  100% { background-position: -150px 150px; }
+}
+
+.projects-container,
+.clouds-top {
+  position: relative;
+  z-index: 3;
+}
+
+
+/* EFECTOS HOVER PARA TODO */
+
+/* ==================== EFECTOS HOVER PARA NAVBAR ==================== */
+
+.navbar a {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4D49FC;
+    transform: translateY(-2px);
+}
+
+/* Efecto de subrayado animado para los enlaces del navbar */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #4D49FC, #8B88FF);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+    width: 80%;
+}
+
+/* Efecto para los iconos */
+.nav-icons img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ==================== EFECTOS HOVER PARA BOTONES ==================== */
+
+.btn-primary {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: #6360ff62;
+}
+
+
+
+/* ==================== EFECTOS HOVER PARA SKILL CARDS ==================== */
+
+.skill-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #4c49fc45;
+    background: linear-gradient(135deg, #272E3640, #1F252D60);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto para el header de la skill card */
+.card-header {
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .card-header {
+    transform: translateX(5px);
+}
+
+/* Efecto para los badges */
+.badges span {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.badges span:hover {
+    background: #4c49fc9c;
+    transform: translateY(-2px);
+    border-color: #4c49fcb1;
+}
+
+/* Efecto para la imagen del header */
+#image-header {
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover #image-header {
+    transform: rotate(5deg) scale(1.1);
+}
+
+
+/* ==================== EFECTOS HOVER PARA PROJECT CARDS ==================== */
+
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Efecto para la imagen del proyecto */
+#img-proyect {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+/* Efecto para la imagen de fondo */
+#back-img {
+    transition: all 0.5s ease;
+}
+
+.project-card:hover #back-img {
+    transform: scale(1.05) rotate(2deg);
+    opacity: 0.7;
+}
+
+/* Efecto para el título del proyecto */
+.project-header h3 {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-header h3 {
+    transform: translateX(5px);
+}
+
+/* Efecto para los tags */
+.project-tags span {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-tags span:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==================== EFECTOS HOVER PARA CONTACT FORM ==================== */
+
+.contact-form {
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(2px);
+    border-color: #4D49FC;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto para inputs */
+.contact-form input, 
+.contact-form textarea {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4D49FC;
+    background: #5A5E6140;
+    transform: translateX(2px);
+}
+
+/* Efecto hover para inputs */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background: #5A5E6140;
+    transform: translateX(3px);
+}
+
+/* Efecto para el botón del formulario */
+.contact-form button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    background-color: #6360ff49;
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+/* Efecto para las tarjetas de contacto media */
+.contact-media {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-media:hover {
+    transform: translateX(2px);
+    border-color: #4D49FC;
+    background: #35383C40;
+}
+
+
+
+
+
+
+
+/* ==================== EFECTO HOVER PARA EL HERO SECTION ==================== */
+
+
+
+.hero p {
+    transition: all 0.3s ease;
+}
+
+.hero:hover p {
+    opacity: 1;
+}
+
+
+/* ==================== EFECTO HOVER PARA FOOTER ==================== */
+
+footer p {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: #4D49FC;
+    transform: translateY(-3px);
+}
+
+
+/* ==================== EFECTO DE TRANSICIÓN ENTRE SECCIONES ==================== */
+
+/* Animación sutil al hacer scroll entre secciones */
+section {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Clase para animar elementos cuando entran en vista (opcional, requiere JS) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==================== RESPONSIVE HOVER (mejor experiencia en móviles) ==================== */
+
+/* En móviles, desactivar algunos efectos hover que pueden ser molestos */
+@media (max-width: 768px) {
+    .skill-card:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+    
+    .project-card:hover #img-proyect {
+        transform: scale(1.02);
+    }
+    
+    .contact-media:hover {
+        transform: translateX(5px);
+    }
+    
+    /* Reducir animaciones en móviles por rendimiento */
+    .skill-card:hover .card-header {
+        transform: translateX(2px);
+    }
+}
+
+/* Respetar preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+
