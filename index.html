@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jimrobert</title>
-    <link rel="shortcut icon" href="/images/skills/Common/json.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/skills/Common/json.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
@@ -24,10 +25,18 @@
     </nav>
     <div class="nav-icons">
         <a href="">
+            <i class="bi bi-toggle-off"></i>
+        </a>
+        <a href="">
             <img src="images/navbar/unmute.svg" alt="unmute">
         </a>
+        <!-- Quize usar boostrap para comodidad -->
+        <a href=""> 
+            <i class="bi bi-linkedin"></i>
+        </a>
         <a href="https://github.com/jimrobert796" target="_blank">
-        <img src="images/navbar/github-inverted.svg" alt="">
+            <img src="images/navbar/github-inverted.svg" alt="">
+            <!-- <i class="bi bi-github"></i> -->
         </a>
         <a href="">
         <img src="images/navbar/email.svg" alt=""></a>
@@ -39,9 +48,10 @@
 <section class="hero" id="home">
 
     <div class="hero-content">
-        <h1>Hi I'm Jimbo</h1>
-        <p>Desarrollador de software</p>
-        <span>Transformo ideas técnicas en una realidad</span>
+        <h1>Hi I'm Jimmy Martinez</h1>
+        <span>Estudiante de Ingeniería en Sistemas y Redes Informáticas con formación sólida en desarrollo de software.</span>
+        <br>
+        <br>
     </div>
     
     <img src="images/clouds/clouds top.svg" class="clouds-top">
@@ -60,14 +70,8 @@
 
             <p>
                 ¡Hola! Soy un desarrollador de software en constante evolución desde 2024.
-            </p>
-
-            <p>
                 Mi motor es la curiosidad insaciable por las nuevas tecnologías y la convicción
                 de que el código es la herramienta más poderosa para resolver problemas y dar soluciones reales.
-            </p>
-
-            <p>
                 Como desarrollador full-stack enfocado mas en "Backend" disfruto especialmente el momento en que
                 una idea se transforma en una solución funcional, bien estructurada, escalable
                 y con un desempeño impecable.
@@ -76,7 +80,7 @@
 
         <div class="about-image">
             <img src="images/about/FOTOGRAFIA.jpg" alt="imagen">
-            <button class="btn-cv-download"> Download Cv</button>
+            <button class="btn-cv-download"><i class="bi bi-download"></i>  Descargar cv</button>
         </div>
 
     </div>
@@ -115,8 +119,7 @@
             <div class="badges">
                 <span> <img src="images/lenguajes/net.svg" alt=""> .NET</span>
                 <span> <img src="images/lenguajes/fastapi.svg" alt=""> FastAPI</span>
-                <span> <img src="images/lenguajes/flask.svg" alt=""> Flask</span>
-                <span> <img src="images/lenguajes/linux.svg" alt=""> Linux</span>
+                <span> <img src="images/lenguajes/jinja.svg" alt=""> Jinja</span>
             </div>
         </div>
 
@@ -187,7 +190,10 @@
         </div>
 
         <div class="project-buttons">
-            <a href="https://github.com/jimrobert796/NdxYtConv" style="text-decoration: none; color: inherit;" target="_blank" class="btn-primary">Visita</a>
+            <a href="https://github.com/jimrobert796/NdxYtConv" style="text-decoration: none; color: inherit;" target="_blank" class="btn-primary"> 
+                <i class="bi bi-github"></i>
+                Visita
+            </a>
         </div>
     </div>
 </div>
@@ -214,7 +220,9 @@
         </div>
 
         <div class="project-buttons">
-            <a href="https://github.com/jimrobert796/Pokedex-Proyect.git"  class="btn-primary" style="text-decoration: none; color: inherit;" target="_blank">Visita</a>
+            <a href="https://github.com/jimrobert796/Pokedex-Proyect.git"  class="btn-primary" style="text-decoration: none; color: inherit;" target="_blank">
+                <i class="bi bi-github"></i>
+                Visita</a>
         </div>
     </div>
     <div class="project-image">
@@ -257,7 +265,9 @@
         </div>
 
         <div class="project-buttons">
-            <a href="https://github.com/jimrobert796/Webapp-gestion-de-inventario" style="text-decoration: none; color: inherit;" target="_blank" class="btn-primary">Visita</a>
+            <a href="https://github.com/jimrobert796/Webapp-gestion-de-inventario" style="text-decoration: none; color: inherit;" target="_blank" class="btn-primary">
+                <i class="bi bi-github"></i>
+                Visita</a>
 
         </div>
     </div>
@@ -268,54 +278,54 @@
 <!-- CONTACT -->
 <section class="contact" id="contact">
 
-<h2>Contact me</h2>
-
 <div class="contact-container">
+    
+    <div class="contact-info">
 
-<form class="contact-form">
-    <h2>Send me a Message</h2>
-    <h4>Name *</h4>
-    <input type="text" placeholder="Your name">
-    <h4>Email *</h4>
-    <input type="email" placeholder="your.email@email.com">
-    <h4>Subject *</h4>
-    <input type="text" placeholder="What's this about">
-    <h4>Message *</h4>
-    <textarea placeholder="Your message.."></textarea>
+        <h2>¿Tienes un proyecto?</h2>
+        <h4>Siempre estoy abierto a nuevas oportunidades, ideas creativas o proyectos desafiantes. 
+        Si tienes una idea en mente, estaré encantado de ser parte de ella.</h4>
 
-    <button>Send Message</button>
-
-</form>
+        <p><i class="bi bi-geo-alt" style="color: white;"></i> Usulutan, El Salvador</p>
+        <p><i class="bi bi-telephone" style="color: white;"></i> +503 6170-0160</p>
 
 
-<div class="contact-info">
+        <div class="contact-media">
+            <!-- Le quitamos lo que seria el marcado de color para conveniencia -->
+            <a href="https://github.com/jimrobert796" style="text-decoration: none; color: inherit;" target="_blank">
+                <i class="bi bi-github" "></i>
+            </a>
+            <a href="" style="text-decoration: none; color: inherit;">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="" style="text-decoration: none; color: inherit;">
+                <i class="bi bi-envelope-fill"></i>
 
-    <h2>Social Links</h2>
+            </a>
+        </div>
 
-    <div class="contact-media">
-        <!-- Le quitamos lo que seria el marcado de color para conveniencia -->
-        <a href="https://github.com/jimrobert796" style="text-decoration: none; color: inherit;" target="_blank">
-            <h3>GitHub</h3>
-            <p>Checkout my work</p>
-        </a>
-    </div>
-    <div class="contact-media">
-        <a href="" style="text-decoration: none; color: inherit;">
-            <h3>Email</h3>
-            <p>Direct email</p>
-        </a>
+
+
     </div>
 
 
+    <form class="contact-form">
+        <h2>Enviame un mensaje</h2>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Email">
+        <textarea placeholder="Mensaje"></textarea>
 
-</div>
+        <button>Enviar</button>
+
+    </form>
+
 
 </div>
 </section>
 
 <footer>
     <img src="images/clouds/clouds_bottom.svg" class="clouds-bottom">
-<p>© 2026 jimrobert796</p>
+<p>© 2026 Jimmy Martinez</p>
 </footer>
 
 </body>
