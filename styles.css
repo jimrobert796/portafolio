@@ -910,37 +910,6 @@ section {
 }
 
 
-/* ==================== RESPONSIVE HOVER (mejor experiencia en móviles) ==================== */
-
-/* En móviles, desactivar algunos efectos hover que pueden ser molestos */
-@media (max-width: 768px) {
-    .skill-card:hover {
-        transform: translateY(-4px) scale(1.01);
-    }
-    
-    .project-card:hover #img-proyect {
-        transform: scale(1.02);
-    }
-    
-    .contact-media:hover {
-        transform: translateX(5px);
-    }
-    
-    /* Reducir animaciones en móviles por rendimiento */
-    .skill-card:hover .card-header {
-        transform: translateX(2px);
-    }
-}
-
-/* Respetar preferencias de movimiento reducido */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
 
 
 
