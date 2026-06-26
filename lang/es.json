@@ -1,0 +1,37 @@
+{
+    "nav_home": "Home",
+    "nav_about": "Acerca de",
+    "nav_skills": "Habilidades",
+    "nav_projects": "Proyectos",
+    "nav_contact": "Contacto",
+
+    "hero_title": "Hola, soy Jimmy Martinez",
+    "hero_subtitle": "Estudiante de Ingeniería en Sistemas y Redes Informáticas con formación sólida en desarrollo de software.",
+
+    "about_title": "Hola, soy Jimbo",
+    "about_text": "Soy estudiante de Ingeniería en Sistemas y Redes Informáticas desde 2024, con una fuerte orientación hacia el aprendizaje continuo y la exploración de nuevas tecnologías. Me impulsa la curiosidad y el interés por utilizar el desarrollo de software como una herramienta clave para resolver problemas y construir soluciones reales.\n\nComo desarrollador full-stack con mayor enfoque en el área de backend, me especializo en la creación de sistemas robustos, bien estructurados y escalables. Disfruto especialmente transformar ideas en soluciones funcionales, optimizando el rendimiento y asegurando una arquitectura sólida en cada proyecto.",
+    "btn_cv": "Descargar cv",
+
+    "skills_title": "Mis Habilidades",
+    "skill_languages": "Lenguajes",
+    "skill_frameworks": "Frameworks",
+    "skill_databases": "Bases de datos",
+    "skill_tools": "Herramientas",
+
+    "projects_title": "Proyectos Destacados",
+    "proj_visit": "Visita",
+    "proj1_desc": "Una herramienta ligera y rápida para convertir contenido de YouTube a formatos locales como mp3/mp4.",
+    "proj2_desc": "Una aplicación en Python que permite buscar Pokémon por tipo y generación, mostrando su información básica, estadísticas, formas y sonidos.",
+    "proj3_desc": "Sistema de gestión de inventario para una ferretería/empresa (Ferretería el Maestro). El sistema permite administrar productos, controlar existencias, gestionar compras, devoluciones y ventas, asignando roles de usuario con diferentes niveles de acceso.",
+
+    "recognitions_title": "Reconocimientos y Certificaciones",
+
+    "contact_title": "¿Tienes un proyecto?",
+    "contact_subtitle": "Siempre estoy abierto a nuevas oportunidades, ideas creativas o proyectos desafiantes. Si tienes una idea en mente, estaré encantado de ser parte de ella.",
+    "contact_location": "Usulután, El Salvador",
+    "contact_form_title": "Envíame un mensaje",
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_message": "Mensaje",
+    "form_submit": "Enviar"
+}

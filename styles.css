@@ -812,6 +812,129 @@ footer p {
     transform: translateY(-2px);
 }
 
+/* =====================================================
+   RECOGNITIONS
+   Tarjetas de logros/certificaciones.
+   Mismo patrón animado que hero, skills y projects.
+   ===================================================== */
+.recognitions {
+    padding: 100px 10%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #070707;
+}
+
+.recognitions h2 {
+    margin-bottom: 50px;
+}
+
+/* Contenedor: las tarjetas se acomodan en fila y saltan de línea si no caben */
+.recognitions-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 4;
+}
+
+/* Capa 1 y 2 del patrón (igual que skills/projects) */
+.recognitions::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.50%,0.3)' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 150px 150px;
+}
+
+.recognitions::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.45%)' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 150px 150px;
+    animation: driftSW 16s linear infinite;
+}
+
+/* Tarjeta individual de reconocimiento */
+.recognition-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 340px;          /* Ancho fijo: 1, 2 o 3 por fila según el espacio disponible */
+    background: #272E3640;
+    border-color: #B6BBC140;
+    border-style: solid;
+    border-width: 3px;
+    opacity: 90%;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    z-index: 4;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.recognition-card:hover {
+    border-color: #4c49fc45;
+    background: linear-gradient(135deg, #272E3640, #1F252D60);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Imagen del logro/certificación — ocupa todo el ancho de la card, arriba */
+#reco_image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #4A4E51;
+    margin-bottom: 18px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.recognition-card:hover #reco_image {
+    border-color: #4c49fc8a;
+    transform: scale(1.02);
+}
+
+/* Header con el título del reconocimiento */
+.recognition-card .card-header {
+    margin-bottom: 10px;
+}
+
+.recognition-card .card-header h3 {
+    font-size: 19px;
+}
+
+
+
+/* Año / estado, alineado abajo a la derecha */
+.recognition-card .status {
+    align-self: flex-end;
+    font-size: 14px;
+    color: #b1b9c0;
+}
+
+.recognition-card:hover .card-header {
+    transform: translateX(5px);
+}
+
 
 /* =====================================================
    HOVER — CONTACT FORM
@@ -1774,3 +1897,53 @@ section {
     padding: 16px;
   }
 }
+
+
+
+
+/* 
+Anmacion de fade para cada que se cambia el lenguaje 
+*/
+[data-i18n],
+[data-i18n-placeholder] {
+    transition: opacity 0.25s ease;
+}
+.i18n-fading {
+    opacity: 0 !important;
+    transition: opacity 0.25s ease !important;
+}
+
+
+
+/* 
+Anmacion para el icono de musica
+*/
+#music-toggle {
+    position: relative;
+}
+
+#music-toggle.is-muted::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: rotate(-45deg);
+}
+
+
+/* 
+Carga en cascada
+*/
+
+/* Cascada en Skills */
+.skills-container .skill-card:nth-child(1) { transition-delay: 0s; }
+.skills-container .skill-card:nth-child(2) { transition-delay: 0.1s; }
+.skills-container .skill-card:nth-child(3) { transition-delay: 0.2s; }
+.skills-container .skill-card:nth-child(4) { transition-delay: 0.3s; }
+
+/* Cascada en Recognitions */
+.recognitions-container .recognition-card:nth-child(1) { transition-delay: 0s; }
+.recognitions-container .recognition-card:nth-child(2) { transition-delay: 0.15s; }

@@ -1,0 +1,37 @@
+{
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_skills": "Skills",
+    "nav_projects": "Projects",
+    "nav_contact": "Contact",
+
+    "hero_title": "Hi, I'm Jimmy Martinez",
+    "hero_subtitle": "Systems & Network Engineering student with a solid foundation in software development.",
+
+    "about_title": "Hello there, I'm Jimbo",
+    "about_text": "I've been a Systems & Network Engineering student since 2024, with a strong drive for continuous learning and exploring new technologies. I'm fueled by curiosity and the interest in using software development as a key tool to solve problems and build real solutions.\n\nAs a full-stack developer with a stronger focus on backend, I specialize in building robust, well-structured, and scalable systems. I particularly enjoy turning ideas into functional solutions, optimizing performance and ensuring a solid architecture in every project.",
+    "btn_cv": "Download CV",
+
+    "skills_title": "My Skillset",
+    "skill_languages": "Languages",
+    "skill_frameworks": "Frameworks",
+    "skill_databases": "Databases",
+    "skill_tools": "Tools",
+
+    "projects_title": "Featured Projects",
+    "proj_visit": "Visit",
+    "proj1_desc": "A lightweight, fast tool to convert YouTube content into local formats like mp3/mp4.",
+    "proj2_desc": "A Python application that lets you search Pokémon by type and generation, showing basic info, stats, forms, and sounds.",
+    "proj3_desc": "Inventory management system for a hardware store (Ferretería el Maestro). The system manages products, stock control, purchases, returns, and sales, with user roles at different access levels.",
+
+    "recognitions_title": "Recognitions & Certifications",
+
+    "contact_title": "Have a project in mind?",
+    "contact_subtitle": "I'm always open to new opportunities, creative ideas, or challenging projects. If you have something in mind, I'd love to be part of it.",
+    "contact_location": "Usulután, El Salvador",
+    "contact_form_title": "Send me a message",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_message": "Message",
+    "form_submit": "Send"
+}
