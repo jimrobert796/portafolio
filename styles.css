@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    font-weight:500;
     background: #0C0F13;
     color: white;
     overflow-x: hidden; /* Evita scroll horizontal indeseado */
@@ -451,6 +452,7 @@ h2 {
 
 /* Contenedor de botones de acción (GitHub, Demo, etc.) */
 .project-buttons {
+  font-size: 14px;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
