@@ -24,7 +24,13 @@
     "proj2_desc": "A Python application that lets you search Pokémon by type and generation, showing basic info, stats, forms, and sounds.",
     "proj3_desc": "Inventory management system for a hardware store (Ferretería el Maestro). The system manages products, stock control, purchases, returns, and sales, with user roles at different access levels.",
 
-    "recognitions_title": "Recognitions & Certifications",
+    "recognitions_title": "Recognitions",
+    "reco1_title": "First Place FLIA",
+    "reco1_desc": "First place in the software development category, presenting an Android project.",
+
+    "certificates_title": "Certificates",
+    "cert1_title": "Frontend Developer",
+    "cert1_desc": "Frontend development certification, covering HTML, CSS, JavaScript, and web design best practices.",
 
     "contact_title": "Have a project in mind?",
     "contact_subtitle": "I'm always open to new opportunities, creative ideas, or challenging projects. If you have something in mind, I'd love to be part of it.",

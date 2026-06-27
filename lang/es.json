@@ -24,7 +24,13 @@
     "proj2_desc": "Una aplicación en Python que permite buscar Pokémon por tipo y generación, mostrando su información básica, estadísticas, formas y sonidos.",
     "proj3_desc": "Sistema de gestión de inventario para una ferretería/empresa (Ferretería el Maestro). El sistema permite administrar productos, controlar existencias, gestionar compras, devoluciones y ventas, asignando roles de usuario con diferentes niveles de acceso.",
 
-    "recognitions_title": "Reconocimientos y Certificaciones",
+    "recognitions_title": "Reconocimientos",
+    "reco1_title": "Primer Lugar FlIA",
+    "reco1_desc": "Primer lugar en la categoría de desarrollo de software, presentando un proyecto para Android.",
+
+    "certificates_title": "Certificaciones",
+    "cert1_title": "Frontend Developer",
+    "cert1_desc": "Certificación en desarrollo frontend, cubriendo HTML, CSS, JavaScript y buenas prácticas de diseño web.",
 
     "contact_title": "¿Tienes un proyecto?",
     "contact_subtitle": "Siempre estoy abierto a nuevas oportunidades, ideas creativas o proyectos desafiantes. Si tienes una idea en mente, estaré encantado de ser parte de ella.",

@@ -811,10 +811,9 @@ footer p {
 .project-tags span:hover {
     transform: translateY(-2px);
 }
-
 /* =====================================================
    RECOGNITIONS
-   Tarjetas de logros/certificaciones.
+   Tarjetas de logros/reconocimientos.
    Mismo patrón animado que hero, skills y projects.
    ===================================================== */
 .recognitions {
@@ -835,6 +834,7 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     gap: 20px;
     position: relative;
     z-index: 4;
@@ -872,13 +872,13 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 340px;          /* Ancho fijo: 1, 2 o 3 por fila según el espacio disponible */
+    width: 340px;
     background: #272E3640;
     border-color: #B6BBC140;
     border-style: solid;
     border-width: 3px;
     opacity: 90%;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -886,6 +886,7 @@ footer p {
     text-align: left;
     position: relative;
     z-index: 4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 }
@@ -897,44 +898,382 @@ footer p {
     transform: translateY(-5px);
 }
 
-/* Imagen del logro/certificación — ocupa todo el ancho de la card, arriba */
-#reco_image {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid #4A4E51;
-    margin-bottom: 18px;
-    transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.recognition-card:hover #reco_image {
-    border-color: #4c49fc8a;
-    transform: scale(1.02);
-}
-
 /* Header con el título del reconocimiento */
 .recognition-card .card-header {
+    display: block;
     margin-bottom: 10px;
 }
 
 .recognition-card .card-header h3 {
     font-size: 19px;
-}
-
-
-
-/* Año / estado, alineado abajo a la derecha */
-.recognition-card .status {
-    align-self: flex-end;
-    font-size: 14px;
-    color: #b1b9c0;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
 .recognition-card:hover .card-header {
     transform: translateX(5px);
 }
 
+/* Link/contenedor de la imagen, con overlay de "expandir" al hover */
+.reco-link {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.reco-link::after {
+    content: '\f35d';
+    font-family: "bootstrap-icons";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 22px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.recognition-card:hover .reco-link::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Imagen del logro/reconocimiento — ocupa todo el ancho de la card, arriba */
+.reco-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    border: 2px solid #4A4E51;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.recognition-card:hover .reco-image {
+    filter: brightness(0.7);
+    border-color: #4c49fc8a;
+    transform: scale(1.03);
+}
+
+/* Quién otorgó el reconocimiento */
+.recognition-title {
+    font-size: 18px;
+    color: #8B88FF;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.recognition-title::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4D49FC;
+    flex-shrink: 0;
+}
+
+/* Descripción del logro */
+.recognition-desc {
+    font-size: 14px;
+    color: #b1b9c0;
+    line-height: 22px;
+    margin-bottom: 20px;
+    flex-grow: 1; /* empuja el footer hacia abajo aunque el texto sea corto */
+}
+
+/* Footer: año + link al certificado */
+.recognition-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #4A4E5160;
+}
+
+.recognition-card .status {
+    font-size: 13px;
+    font-weight: 600;
+    color: #b1b9c0;
+    background: #0E0F10;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.reco-view-link {
+    font-size: 13px;
+    color: #8B88FF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.reco-view-link i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.reco-view-link:hover {
+    color: #4D49FC;
+    gap: 8px;
+}
+
+.reco-view-link:hover i {
+    transform: translate(2px, -2px);
+}
+
+/* Cascada de aparición al hacer scroll */
+.recognitions-container .recognition-card:nth-child(1) { transition-delay: 0s; }
+.recognitions-container .recognition-card:nth-child(2) { transition-delay: 0.15s; }
+.recognitions-container .recognition-card:nth-child(3) { transition-delay: 0.3s; }
+
+/* =====================================================
+   CERTIFICATES
+   Tarjetas de logros/certificaciones.
+   Mismo patrón animado que hero, skills y projects.
+   ===================================================== */
+.certificates {
+    padding: 100px 10%;
+    text-align: center;
+    position: relative;
+    background-color: #070707;
+}
+
+.certificates h2 {
+    margin-bottom: 50px;
+}
+
+.certificates-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    position: relative;
+    z-index: 4;
+}
+
+.certificates::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.50%,0.3)' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 150px 150px;
+}
+
+.certificates::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect x='25' y='25' width='100' height='100' rx='18' ry='18' fill='rgba(4.71%, 5.88%, 7.45%)' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 150px 150px;
+    animation: driftSW 16s linear infinite;
+}
+
+/* Tarjeta individual */
+.certificate-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    width: 340px;
+    background: #272E3640;
+    border-color: #B6BBC140;
+    border-style: solid;
+    border-width: 3px;
+    opacity: 90%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.certificate-card:hover {
+    border-color: #4c49fc45;
+    background: linear-gradient(135deg, #272E3640, #1F252D60);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.certificate-card .card-header {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.certificate-card .card-header h3 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.certificate-card:hover .card-header {
+    transform: translateX(5px);
+}
+
+/* Link/contenedor de la imagen, con overlay de "expandir" al hover */
+.cert-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.cert-link::after {
+    content: '\f35d';
+    font-family: "bootstrap-icons";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 22px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.certificate-card:hover .cert-link::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Imagen del certificado */
+.cert-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    border: 2px solid #4A4E51;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.certificate-card:hover .cert-image {
+    filter: brightness(0.7);
+    transform: scale(1.03);
+    border-color: #4c49fc8a;
+}
+
+/* Quién otorgó el certificado */
+.certificate-title {
+    font-size: 18px;
+    color: #8B88FF;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.certificate-title::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4D49FC;
+    flex-shrink: 0;
+}
+
+/* Descripción */
+.certificate-desc {
+    font-size: 14px;
+    color: #b1b9c0;
+    line-height: 22px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Footer: año + link al certificado */
+.certificate-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #4A4E5160;
+}
+
+.certificate-card .status {
+    font-size: 13px;
+    font-weight: 600;
+    color: #b1b9c0;
+    background: #0E0F10;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.cert-view-link {
+    font-size: 13px;
+    color: #8B88FF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.cert-view-link i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.cert-view-link:hover {
+    color: #4D49FC;
+    gap: 8px;
+}
+
+.cert-view-link:hover i {
+    transform: translate(2px, -2px);
+}
+
+/* Cascada de aparición al hacer scroll */
+.certificates-container .certificate-card:nth-child(1) { transition-delay: 0s; }
+.certificates-container .certificate-card:nth-child(2) { transition-delay: 0.15s; }
+.certificates-container .certificate-card:nth-child(3) { transition-delay: 0.3s; }
 
 /* =====================================================
    HOVER — CONTACT FORM
