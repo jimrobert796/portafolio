@@ -227,7 +227,7 @@ nav {
 }
 
 .skills h2 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .skills-container {
@@ -277,8 +277,8 @@ h2 {
     border-style: solid;
     border-width: 3px;
     opacity: 90%;
-    padding: 50px;
-    margin-bottom: 15px;
+    padding: 30px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 
@@ -289,7 +289,7 @@ h2 {
     flex-direction: row;
     position: relative;
     right: 10px;
-    bottom: 30px;
+    bottom: 10px;
 }
 
 /* Ícono decorativo en el header de la tarjeta */
@@ -303,8 +303,8 @@ h2 {
 
 /* Íconos pequeños dentro de los badges de tecnologías */
 .skill-card img {
-    width: 18px;
-    height: 18px;
+    width: 28px;
+    height: 28px;
 }
 
 /* Contenedor de los badges/chips de tecnologías */
@@ -315,9 +315,9 @@ h2 {
 
 /* Badge individual (ej: "Python", "C#", "MySQL") */
 .badges span {
-    padding: 6px 10px;
-    margin: 10px;
-    background: #0E0F10;
+    padding: 18px 18px;
+    margin:8px;
+    background: #0e0f10de;
     border-color: #4A4E51;
     border-radius: 16px;
     font-size: 16px;
@@ -1451,6 +1451,25 @@ section {
   .contact {
     padding: 140px 15%;
   }
+
+  .skill-card img {
+    width: 34px;
+    height: 34px;
+  }
+
+  #image-header {
+    width: 32px;
+    height: 40px;
+  }
+
+  .badges span {
+    padding: 22px 22px;
+    font-size: 18px;
+  }
+
+  .skill-card {
+    padding: 45px;
+  }
 }
 
 
@@ -1498,21 +1517,20 @@ section {
     padding: 120px 12%;
   }
 
-  .badges span {
-    font-size: 18px;
-    padding: 8px 14px;
-  }
-
   .skill-card img {
-    width: 22px;
-    height: 22px;
+    width: 31px;
+    height: 31px;
   }
 
   #image-header {
-    width: 30px;
-    height: 38px;
+    width: 29px;
+    height: 37px;
   }
 
+  .badges span {
+    font-size: 17px;
+    padding: 20px 20px;
+  }
   .project-header h3 {
     font-size: 44px;
   }
@@ -1587,19 +1605,20 @@ section {
   }
 
   .skill-card img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 
   #image-header {
-    width: 20px;
-    height: 26px;
+    width: 24px;
+    height: 30px;
+    top: 0.2px;
   }
 
   .badges span {
     font-size: 14px;
-    padding: 5px 8px;
-    margin: 6px;
+    padding: 12px 12px;
+    margin: 5px;
   }
 
   /* Projects: layout desktop escalado, imagen + info lado a lado */
@@ -1794,24 +1813,22 @@ section {
   .badges {
     flex-wrap: wrap;
   }
-
-  .badges span {
-    font-size: 13px;
-    padding: 5px 9px;
-    margin: 5px;
-  }
-
-  .skill-card img {
-    width: 14px;
-    height: 14px;
+.skill-card img {
+    width: 20px;
+    height: 20px;
   }
 
   #image-header {
-    width: 20px;
-    height: 25px;
+    width: 24px;
+    height: 30px;
     top: 0.2px;
   }
 
+  .badges span {
+    font-size: 14px;
+    padding: 12px 12px;
+    margin: 5px;
+  }
   /* Projects: card completa con imagen arriba e info abajo */
   .projects {
     padding: 80px 8%;
@@ -2033,15 +2050,21 @@ section {
     bottom: 20px;
   }
 
+  .skill-card img {
+    width: 16px;
+    height: 16px;
+  }
+
   #image-header {
-    width: 18px;
-    height: 22px;
+    width: 20px;
+    height: 25px;
     bottom: 0.2px;
   }
 
-  .skill-card img {
-    width: 13px;
-    height: 13px;
+  .badges span {
+    font-size: 12px;
+    padding: 8px 8px;
+    margin: 4px;
   }
 
   .badges {
@@ -2049,11 +2072,6 @@ section {
     gap: 4px;
   }
 
-  .badges span {
-    font-size: 12px;
-    padding: 4px 7px;
-    margin: 4px;
-  }
 
   .projects {
     padding: 60px 10%;
@@ -2220,22 +2238,21 @@ section {
     padding: 20px 14px;
   }
 
-  #image-header {
-    width: 15px;
-    height: 19px;
+   .skill-card img {
+    width: 13px;
+    height: 13px;
   }
 
-  .skill-card img {
-    width: 12px;
-    height: 12px;
+  #image-header {
+    width: 16px;
+    height: 20px;
   }
 
   .badges span {
     font-size: 11px;
-    padding: 3px 6px;
+    padding: 6px 6px;
     margin: 3px;
   }
-
   .project-header h3 {
     font-size: 20px;
   }
