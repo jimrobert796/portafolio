@@ -27,10 +27,12 @@
     "recognitions_title": "Recognitions",
     "reco1_title": "First Place FLIA",
     "reco1_desc": "First place in the software development category, presenting an Android project.",
+    "reco_view": "View recognition",
 
     "certificates_title": "Certificates",
     "cert1_title": "Frontend Developer",
     "cert1_desc": "Frontend development certification, covering HTML, CSS, JavaScript, and web design best practices.",
+    "cert_view": "View certificate",
 
     "contact_title": "Have a project in mind?",
     "contact_subtitle": "I'm always open to new opportunities, creative ideas, or challenging projects. If you have something in mind, I'd love to be part of it.",
