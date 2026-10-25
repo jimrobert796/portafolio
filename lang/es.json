@@ -22,10 +22,14 @@
     "proj_visit": "Visita",
     "proj1_desc": "Una herramienta ligera y rápida para convertir contenido de YouTube a formatos locales como mp3/mp4.",
     "proj2_desc": "Sistema de gestión de inventario para una ferretería/empresa (Ferretería el Maestro). El sistema permite administrar productos, controlar existencias, gestionar compras, devoluciones y ventas, asignando roles de usuario con diferentes niveles de acceso.",
+    "proj3_desc": "Sistema de reconocimiento de lenguaje de señas donde el usuario define sus propias palabras y gestos.",
+
 
     "recognitions_title": "Reconocimientos",
     "reco1_title": "Primer Lugar FLIA",
     "reco1_desc": "Primer lugar en la categoría de desarrollo de software, presentando un proyecto para Android.",
+    "reco2_title": "Tercer Lugar CONINFO",
+    "reco2_desc": " Sistema de reconocimiento de lenguaje de señas donde el usuario define sus propias palabras y gestos.",
     "reco_view": "Ver reconocimiento",
 
     "certificates_title": "Certificaciones",

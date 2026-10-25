@@ -22,10 +22,13 @@
     "proj_visit": "Visit",
     "proj1_desc": "A lightweight, fast tool to convert YouTube content into local formats like mp3/mp4.",
     "proj2_desc": "Inventory management system for a hardware store (Ferretería el Maestro). The system manages products, stock control, purchases, returns, and sales, with user roles at different access levels.",
+    "proj3_desc": "Sign language recognition system where users define their own words and gestures.",
 
     "recognitions_title": "Recognitions",
     "reco1_title": "First Place FLIA",
     "reco1_desc": "First place in the software development category, presenting an Android project.",
+    "reco2_title": "Third Place CONINFO",
+    "reco2_desc": "Sign language recognition system where users define their own words and gestures.",
     "reco_view": "View recognition",
 
     "certificates_title": "Certificates",
