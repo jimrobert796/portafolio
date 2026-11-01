@@ -408,14 +408,13 @@ Como desarrollador full-stack con mayor enfoque en el área de backend, me espec
     </div>
 
 
-    <form class="contact-form fade-in">
+    <form class="contact-form fade-in" id="contact-form">
         <h2 data-i18n="contact_form_title">Enviame un mensaje</h2>
-        <input type="text" data-i18n-placeholder="form_name" placeholder="Nombre">
-        <input type="text" data-i18n-placeholder="form_email" placeholder="Email">
-        <textarea data-i18n-placeholder="form_message" placeholder="Mensaje"></textarea>
-
-        <button data-i18n="form_submit">Enviar</button>
-
+        <!-- Es importante añadir el atributo 'name' a los inputs para que EmailJS los detecte -->
+        <input type="text" name="form_name" data-i18n-placeholder="form_name" placeholder="Nombre" required>
+        <input type="email" name="form_email" data-i18n-placeholder="form_email" placeholder="Email" required>
+        <textarea name="form_message" data-i18n-placeholder="form_message" placeholder="Mensaje" required></textarea>
+        <button data-i18n="form_submit" type="submit">Enviar</button>
     </form>
 
 
@@ -427,7 +426,14 @@ Como desarrollador full-stack con mayor enfoque en el área de backend, me espec
 <p>© 2026 Jimmy Martinez</p>
 </footer>
 
+<!-- Notificacion toast -->
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
 </body>
+<!-- Scripts -->
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script src="js/app.js"></script>
 <script src="js/music.js"></script>
 <script src="js/scroll-reveal.js"></script>
 <script src="js/i18n.js"></script>
