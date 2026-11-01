@@ -25,15 +25,15 @@
     "proj3_desc": "Sign language recognition system where users define their own words and gestures.",
 
     "recognitions_title": "Recognitions",
-    "reco1_title": "First Place FLIA",
-    "reco1_desc": "First place in the software development category, presenting an Android project.",
-    "reco2_title": "Third Place CONINFO",
-    "reco2_desc": "Sign language recognition system where users define their own words and gestures.",
+    "flia_2026_title": "First Place FLIA",
+    "flia_2026_desc": "First place in the software development category, presenting an Android project.",
+    "coninfo_2026_title": "Third Place CONINFO",
+    "coninfo_2026_desc": "Sign language recognition system where users define their own words and gestures.",
     "reco_view": "View recognition",
 
     "certificates_title": "Certificates",
-    "cert1_title": "Frontend Developer",
-    "cert1_desc": "Frontend development certification, covering HTML, CSS, JavaScript, and web design best practices.",
+    "frontend_platzi_title": "Frontend Developer",
+    "frontend_platzi_desc": "Frontend development certification, covering HTML, CSS, JavaScript, and web design best practices.",
     "cert_view": "View certificate",
 
     "contact_title": "Have a project in mind?",
